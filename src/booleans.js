@@ -1,62 +1,92 @@
 function negate(a) {
   // your code here
-};
+  if (a === true) {
+    return false;
+  } else {
+    return true;
+  }
+}
 
 function both(a, b) {
-  // your code here
-};
+  if (a === true && b === true) {
+    return true;
+  } else if (a === true && b === false) {
+    return false;
+  } else if (a === false && b === true) {
+    return false;
+  } else {
+    return false;
+  }
+}
 
 function either(a, b) {
   // your code here
-};
+  if (a === true || b === true) {
+    return true;
+  } else if (a === true || b === false) {
+    return false;
+  } else if (a === false || b === true) {
+    return false;
+  } else if (a === false || b === false) {
+    return false;
+  }
+}
 
 function none(a, b) {
-  // your code here
-};
+  if (
+    (a == true && b === true) ||
+    (a === true && b === false) ||
+    (a === false && b === true)
+  ) {
+    return false;
+  } else if (a === false && b === false) {
+    return true;
+  }
+}
 
 function one(a, b) {
   // your code here
-};
+}
 
 function truthiness(a) {
   // your code here
-};
+}
 
 function isEqual(a, b) {
   // your code here
-};
+}
 
 function isGreaterThan(a, b) {
   // your code here
-};
+}
 
 function isLessThanOrEqualTo(a, b) {
   // your code here
-};
+}
 
 function isOdd(a) {
   // your code here
-};
+}
 
 function isEven(a) {
   // your code here
-};
+}
 
 function isSquare(a) {
   // your code here
-};
+}
 
 function startsWith(char, string) {
   // your code here
-};
+}
 
 function containsVowels(string) {
   // your code here
-};
+}
 
 function isLowerCase(string) {
   // your code here
-};
+}
 
 module.exports = {
   negate,
