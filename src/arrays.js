@@ -4,11 +4,17 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  let newArr = string.split('');
+  console.log(newArr);
+  const filterArr = newArr.filter(function(e) {
+    return e !== ',';
+  });
+  console.log(filterArr);
+  return filterArr;
 };
 
 const addToArray = (element, array) => {
