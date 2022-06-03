@@ -123,11 +123,18 @@ function startsWith(char, string) {
   }
 }
 
+/* refactor */
 function containsVowels(string) {
   // your code here
-  if (string === 'cat' || string === 'DOG') {
+  // if (string === 'cat' || string === 'DOG') {
+  //   return true;
+  // } else if (string === 'why') {
+  //   return false;
+  // }
+
+  if (string.match(/[ieoua]/gi)) {
     return true;
-  } else if (string === 'why') {
+  } else {
     return false;
   }
 }
