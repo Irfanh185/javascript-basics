@@ -33,23 +33,44 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  const numToString = numbers.map(function(number) {
+    return number.toString();
+  });
+  console.log(numToString);
+  return numToString;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const upperCaseWords = strings.map(string => {
+    return string.toUpperCase();
+  });
+  return upperCaseWords;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  const reverseWords = strings.map(string => {
+    return string
+      .split('')
+      .reverse()
+      .join('');
+  });
+  console.log(reverseWords);
+  return reverseWords;
 };
 
 const onlyEven = numbers => {
-  // your code here
+  const evenNums = numbers.filter(function(number) {
+    return number % 2 == 0;
+  });
+  return evenNums;
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  let newArr = [...array];
+  newArr.splice(index, 1);
+  console.log(newArr);
+  console.log(array);
+  return newArr;
 };
 
 const elementsStartingWithAVowel = strings => {
