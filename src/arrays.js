@@ -74,15 +74,23 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const startsWithVowel = strings.filter(function(e) {
+    return e[0].match(/[ieoua]/gi);
+  });
+  console.log(startsWithVowel);
+  return startsWithVowel;
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/g, '');
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  });
+  console.log(sum);
+  return sum;
 };
 
 const sortByLastLetter = strings => {
