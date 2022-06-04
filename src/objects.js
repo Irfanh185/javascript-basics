@@ -7,23 +7,36 @@ const createPerson = (name, age) => {
 };
 
 const getName = object => {
-  // your code here
+  return object.name;
 };
 
 const getProperty = (property, object) => {
-  // your code here
+  return object[property];
 };
 
 const hasProperty = (property, object) => {
-  // your code here
+  if (object.hasOwnProperty(property)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isOver65 = person => {
-  // your code here
+  if (person.age > 65) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const getAges = people => {
-  // your code here
+  console.log(people);
+  const getAge = people.map(function(e) {
+    return e.age;
+  });
+  console.log(getAge);
+  return getAge;
 };
 
 const findByName = (name, people) => {
