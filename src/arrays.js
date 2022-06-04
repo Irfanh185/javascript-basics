@@ -94,7 +94,12 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const sorted = strings.sort((a, b) => {
+    return a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1);
+  });
+
+  console.log(sorted);
+  return sorted;
 };
 
 module.exports = {
