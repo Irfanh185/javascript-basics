@@ -49,16 +49,13 @@ const findByName = (name, people) => {
 };
 
 const findHondas = cars => {
-  // your code here
+  const hondasOnly = cars.filter(car => car.manufacturer === 'Honda');
+  return hondasOnly;
 };
 
-const averageAge = people => {
-  // your code here
-};
+const averageAge = people => {};
 
-const createTalkingPerson = (name, age) => {
-  // your code here
-};
+const createTalkingPerson = (name, age) => {};
 
 module.exports = {
   createPerson,
