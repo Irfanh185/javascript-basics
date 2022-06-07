@@ -53,9 +53,27 @@ const findHondas = cars => {
   return hondasOnly;
 };
 
-const averageAge = people => {};
+const averageAge = people => {
+  let sum = 0;
+  for (let i = 0; i < people.length; i++) {
+    sum += people[i].age;
+    console.log(sum);
+  }
+  return sum / people.length;
+};
 
-const createTalkingPerson = (name, age) => {};
+const createTalkingPerson = (name, age) => {
+  function introduce(personName) {
+    return `Hi ${personName}, my name is ${name} and I am ${age}!`;
+  }
+  return {
+    name: name,
+    age: age,
+    introduce: personName => {
+      return `Hi ${personName}, my name is ${name} and I am ${age}!`;
+    }
+  };
+};
 
 module.exports = {
   createPerson,
