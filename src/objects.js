@@ -63,9 +63,6 @@ const averageAge = people => {
 };
 
 const createTalkingPerson = (name, age) => {
-  function introduce(personName) {
-    return `Hi ${personName}, my name is ${name} and I am ${age}!`;
-  }
   return {
     name: name,
     age: age,
